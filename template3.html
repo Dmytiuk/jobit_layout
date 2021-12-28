@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Резюме 3</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://artandrey.github.io/jobitt-demo/page/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			width: 21cm;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		p {
+			line-height: 16px;
+		}
+		.template-wrapper {
+			position: relative;
+			background: white;
+		    max-width: 1000px;
+		    width: 100%;
+		    margin: auto; 
+		}
+		.template-photo {
+			overflow: hidden;
+		}
+		.template-photo img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.template3 {
+			background: #FFCE00;
+			color: #555;
+			font: 10px 'Poppins', sans-serif;
+			padding-bottom: 2.5em;
+		}
+		.template3 a {
+			color: #555;
+			text-decoration: none;
+		}
+		.template3-head {
+			position: relative;
+			padding: 0 6em;
+			z-index: 1;
+		}
+		.template3-head_photo {
+			position: absolute;
+		    top: 2.5em;
+		    right: 2.5em;
+		    width: 20.9em;
+		    height: 27.7em;
+		}
+		.template3-head_title {
+			background: white;
+		    width: 76%;
+		    padding: 4em 0 2em 1em;
+		}
+		.template3-head_title h1 {
+		    color: black;
+		    font-size: 6em;
+		    font-weight: 400;
+		    line-height: .8em;
+		}
+		.template3-head_title span {
+		    font-size: 2.3em;
+		}
+		.template3-main {
+		    display: flex;
+		    flex-wrap: wrap;
+		    background: white;
+		    padding: 3em 6em 2.5em;
+		}
+		.template3-col1 {
+			width: 76%;
+			padding-right: 2em;
+		}
+		.template3-col2 {
+			width: 24%;
+			padding-top: 15.5em;
+		}
+		.template3-block:last-child {
+			margin-bottom: 0;
+		}
+		.template3-block {
+			margin-bottom: 3em;
+		}
+		.template3-title {
+			color: #363636;
+			font: 3em 'Bebas Neue', sans-serif;
+			letter-spacing: .04em;
+			line-height: 1em;
+			padding-bottom: .8em;
+		}
+		.template3-contact_title {
+			display: block;
+			font-size: 1.6em;
+		}
+		.template3-block .template3-info ul li:last-child {
+			padding-bottom: 0;
+		}
+		.template3-contact .template3-info ul li {
+			padding-bottom: 1.5em;
+		}
+		.template3-education .template3-info ul li {
+			padding-bottom: 2em;
+		}
+		.template3-education .template3-info ul li span {
+			display: block;
+		}
+		.template3-languagea_name {
+		    font-size: 1.8em;
+		}
+		.template3-languagea_level:before {
+			content: '-';
+			margin-right: .4em;
+		}
+		.template3-work_row:last-child {
+			padding-bottom: 0;
+		}
+		.template3-work_row {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-bottom: 2em;
+		}
+		.template3-work_col1 {
+			width: 22%;
+		}
+		.template3-work_col2 {
+			width: 78%;
+		}
+		.template3-work_date, .template3-work_name {
+			font-size: 1.1em;
+		}
+		.template3-work_date {
+			padding-bottom: .5em;
+		}
+		.template3-work_post {
+		    font-weight: 500;
+		    padding-bottom: .5em;
+		}
+		.template3-work_desc p {
+			font-weight: 300;
+		}
+		.template3-skills_item:last-child {
+			margin-bottom: 0;
+		}
+		.template3-skills_item {
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    justify-content: space-between;
+		    width: 80%;
+		    margin-bottom: 2em;
+		}
+		.template3-skills_name {
+			font-weight: 500;
+			width: 10%;
+		}
+		.template3-skills_progress {
+		    border: .1em solid #555;
+		    width: 33%;
+		    height: .8em;
+		}
+		.template3-skills_progress-bar {
+			border-right: .1em solid #555;
+			height: 100%;
+		}
+		.template3-skills_date {
+		    width: 10%;
+		    text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="template3 template-wrapper">
+		<div class="template3-head">
+			<div class="template3-head_title">
+				<h1>SARA WALTON</h1>
+				<span>GRAPHIC DESIGNER</span>
+			</div>
+			<div class="template3-head_photo template-photo">
+				<img src="img/photo2.jpg" alt="Photo">
+			</div>
+		</div>
+		<div class="template3-main">
+			<div class="template3-col1">
+				<div class="template3-block template3-profile">
+					<div class="template3-title">Profile</div>
+					<div class="template3-info">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</div>
+				</div>
+				<div class="template3-block template3-work">
+					<div class="template3-title">Work Experience</div>
+					<div class="template3-info">
+						<div class="template3-work_row">
+							<div class="template3-work_col1">
+								<div class="template3-work_date">2020 - Present</div>
+								<div class="template3-work_name">Company Name</div>
+							</div>
+							<div class="template3-work_col2">
+								<div class="template3-work_post">Senior UX Designer</div>
+								<div class="template3-work_desc">
+									<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template3-work_row">
+							<div class="template3-work_col1">
+								<div class="template3-work_date">2019 - 2020</div>
+								<div class="template3-work_name">Company Name</div>
+							</div>
+							<div class="template3-work_col2">
+								<div class="template3-work_post">Junior UX Designer</div>
+								<div class="template3-work_desc">
+									<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template3-work_row">
+							<div class="template3-work_col1">
+								<div class="template3-work_date">2018 - 2019</div>
+								<div class="template3-work_name">Company Name</div>
+							</div>
+							<div class="template3-work_col2">
+								<div class="template3-work_post">UX Designer</div>
+								<div class="template3-work_desc">
+									<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template3-block template3-skills">
+					<div class="template3-title">Skills</div>
+					<div class="template3-info">
+						<div class="template3-skills_item">
+							<div class="template3-skills_name">Skil 1</div>
+							<div class="template3-skills_progress">
+								<div class="template3-skills_progress-bar" style="width: 75%"></div>
+							</div>
+							<div class="template3-skills_date">2 Years</div>
+						</div>
+						<div class="template3-skills_item">
+							<div class="template3-skills_name">Skil 2</div>
+							<div class="template3-skills_progress">
+								<div class="template3-skills_progress-bar" style="width: 60%"></div>
+							</div>
+							<div class="template3-skills_date">3 Years</div>
+						</div>
+						<div class="template3-skills_item">
+							<div class="template3-skills_name">Skil 3</div>
+							<div class="template3-skills_progress">
+								<div class="template3-skills_progress-bar" style="width: 73%"></div>
+							</div>
+							<div class="template3-skills_date">1 Years</div>
+						</div>
+						<div class="template3-skills_item">
+							<div class="template3-skills_name">Skil 4</div>
+							<div class="template3-skills_progress">
+								<div class="template3-skills_progress-bar" style="width: 60%"></div>
+							</div>
+							<div class="template3-skills_date">1 Years</div>
+						</div>
+						<div class="template3-skills_item">
+							<div class="template3-skills_name">Skil 5</div>
+							<div class="template3-skills_progress">
+								<div class="template3-skills_progress-bar" style="width: 25%"></div>
+							</div>
+							<div class="template3-skills_date">3 Years</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="template3-col2">
+				<div class="template3-block template3-contact">
+					<div class="template3-title">Contact</div>
+					<div class="template3-info">
+						<ul>
+							<li>
+								<span class="template3-contact_title">Phone</span>
+								<a href="tel:+000123456789">+000 123 456 789</a>
+							</li>
+							<li>
+								<span class="template3-contact_title">Email</span>
+								<a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
+							</li>
+							<li>
+								<span class="template3-contact_title">Address</span>
+								<span>Your Street Address</span>
+								<p>Town/City, zip code</p>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="template3-block template3-education">
+					<div class="template3-title">Education</div>
+					<div class="template3-info">
+						<ul>
+							<li>
+								<span class="template3-education_date">2014 - 2018</span>
+								<span class="template3-education_name1">Degree Name</span>
+								<span class="template3-education_name2">University name here</span>
+							</li>
+							<li>
+								<span class="template3-education_date">2012 - 2014</span>
+								<span class="template3-education_name1">Degree Name</span>
+								<span class="template3-education_name2">University name here</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="template3-block template3-languagea">
+					<div class="template3-title">Languagea</div>
+					<div class="template3-info">
+						<ul>
+							<li>
+								<span class="template3-languagea_name">English</span>
+								<span class="template3-languagea_level">Native</span>
+							</li>
+							<li>
+								<span class="template3-languagea_name">Italian</span>
+								<span class="template3-languagea_level">Basic</span>
+							</li>
+							<li>
+								<span class="template3-languagea_name">Spanish</span>
+								<span class="template3-languagea_level">Professional</span>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

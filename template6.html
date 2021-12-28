@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Резюме 6</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://artandrey.github.io/jobitt-demo/page/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			width: 21cm;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		p {
+			line-height: 16px;
+		}
+		.template-wrapper {
+			position: relative;
+			background: white;
+		    max-width: 1000px;
+		    width: 100%;
+		    margin: auto; 
+		}
+		.template-photo {
+			overflow: hidden;
+		}
+		.template-photo img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.template6 {
+			background: #F6F6F6;
+			color: #3B3A3C;
+			font: 10px 'Montserrat', sans-serif;
+			padding: 3.5em 3em 2.5em;
+		}
+		.template6 a {
+			color: #3B3A3C;
+			text-decoration: none;
+		}
+		.template6-main_title {
+			text-align: center;
+			padding-bottom: 5em;
+		}
+		.template6-main_title h1 {
+			color: black;
+			font-size: 5.5em;
+		    font-weight: 600;
+		    line-height: 1.1em;
+		    letter-spacing: .2em;
+		    margin-bottom: .2em;
+		}
+		.template6-main_title span {
+			color: #13110C;
+			font: 2em 'Work Sans', sans-serif;
+			letter-spacing: .1em;
+		}
+		.template6-main {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.template6-col1 {
+			width: 20%;
+		}
+		.template6-col2 {
+			width: 80%;
+			padding-left: 8em;
+		}
+		.template6-col3 {
+			width: 100%;
+			padding-top: 1.5em;
+		}
+		.template6-block:last-child {
+			margin-bottom: 0;
+		}
+		.template6-block {
+			margin-bottom: 3.5em;
+		}
+		.template6-title {
+			border-bottom: .1em solid #BBBDBF;
+			color: #13110C;
+			font: 500 2em 'Work Sans', sans-serif;
+			letter-spacing: .05em;
+			text-transform: uppercase;
+			padding-bottom: .5em;
+			margin-bottom: 1em;
+		}
+		.template6-info p {
+			text-align: justify;
+		}
+		.template6-about {
+			margin-bottom: 5.5em;
+		}
+		.template6-contact_title, .template6-contact .template6-info p {
+			color: #555;
+			font-family: 'Poppins', sans-serif;
+		}
+		.template6-contact .template6-info ul li:last-child {
+			padding-bottom: 0;
+		}
+		.template6-contact .template6-info ul li {
+			padding-bottom: 1.5em;
+		}
+		.template6-contact_title {
+			display: block;
+		    font-size: 1.4em;
+		    font-weight: 500;
+		    padding-bottom: .5em;
+		}
+		.template6-work_row:last-child {
+			margin-bottom: 0;
+		}
+		.template6-work_row {
+			display: flex;
+		    flex-wrap: wrap;
+		    margin-bottom: 2.5em;
+		}
+		.template6-work_col1 {
+			width: 28%;
+		}
+		.template6-work_col2 {
+			width: 72%;
+		}
+		.template6-work_name, .template6-work_date, .template6-work_post {
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.template6-work_name {
+			padding-bottom: 1em;
+		}
+		.template6-work_post {
+			font-size: 1.2em;
+			line-height: 1em;
+			padding-bottom: 1em;
+		}
+		.template6-education_row:last-child {
+			margin-bottom: 0;
+		}
+		.template6-education_row {
+			display: flex;
+		    flex-wrap: wrap;
+		    margin-bottom: 2.5em;
+		}
+		.template6-education_col1 {
+			width: 28%;
+		}
+		.template6-education_col2 {
+			width: 72%;
+		}
+		.template6-education_name, .template6-educationk_date, .template6-education_post {
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.template6-education_name {
+			padding-bottom: 1em;
+		}
+		.template6-education_post {
+			font-size: 1.2em;
+			line-height: 1em;
+			padding-bottom: 1em;
+		}
+		.template6-skills .template6-title {
+		    border-top: .1em solid #BBBDBF;
+		    border-bottom: 0;
+		    text-align: center;
+		    padding-top: .4em;
+		    padding-bottom: 0;
+		}
+		.template6-skills .template6-info {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		}
+		.template6-skills_item:nth-child(odd) {
+			margin-right: 2em;
+		}
+		.template6-skills_item:nth-child(even) {
+			margin-left: 2em;
+		}
+		.template6-skills_item {
+			display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    justify-content: space-around;
+		    width: calc(50% - 2em);
+		    margin-left: -7em;
+		    margin-bottom: 2em;
+		}
+		.template6-skills_name, .template6-skills_date {
+			color: #575756;
+			font: 1.6em 'Poppins', sans-serif;
+		}
+		.template6-skills_name {
+			text-align: center;
+			width: 50%;
+		}
+		.template6-skills_date {
+			padding-left: 1.5em;
+		}
+		.template6-skills_inner {
+			display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    justify-content: flex-end;
+			width: 50%;
+		}
+		.template6-skills_progress {
+			width: 8.8em;
+		}
+		.template6-skills_progress ul {
+			display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		}
+		.template6-skills_progress ul li:last-child {
+			margin-right: 0;
+		}
+		.template6-skills_progress ul li {
+		    border: .1em solid #BBBDBF;
+		    border-radius: 100%;
+		    width: 1.2em;
+		    height: 1.2em;
+		    margin-right: .7em;
+		}
+		.template6-skills_progress ul li.active {
+			background: #BBBDBF;
+		}
+	</style>
+</head>
+<body>
+	<div class="template6 template-wrapper">
+		<div class="template6-main_title">
+			<h1>Jennifer<br> watson</h1>
+			<span>USER EXPERINCE DESIGNER</span>
+		</div>
+		<div class="template6-main">
+			<div class="template6-col1">
+				<div class="template6-block template6-about">
+					<div class="template6-title">About me</div>
+					<div class="template6-info">
+						<p>My Name Is Henry Watson lorem empus id fringilla molestie ornare diam in olestie ipsum etium rosn ollicitudin est, porttitor amet hitmassa Done cporttitor dolor shit dolor kiren lorem nisl molestie pretium etfring. is the shitp lorem ipcum retiumci amet is tudinest.moles tium lorem olestie pretium apaza all the rosen. fringilla lorem ipsum.</p>
+					</div>	
+				</div>
+				<div class="template6-block template6-contact">
+					<div class="template6-title">Contact</div>
+					<div class="template6-info">
+						<ul>
+							<li>
+								<span class="template6-contact_title">Ad dress:</span>
+								<p>12th Avenue Street Australia</p>
+							</li>
+							<li>
+								<span class="template6-contact_title">Mobile:</span>
+								<a href="tel:02800200">02800200</a>
+							</li>
+							<li>
+								<span class="template6-contact_title">Home:</span>
+								<a href="tel:02800200">02800200</a>
+							</li>
+							<li>
+								<span class="template6-contact_title">Email:</span>
+								<a href="mailto:johnwatson@gmail.com">johnwatson@gmail.com</a>
+							</li>
+							<li>
+								<span class="template6-contact_title">Website:</span>
+								<a href="jwatson.com" target="_blank">jwatson.com</a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="template6-col2">
+				<div class="template6-block template6-work">
+					<div class="template6-title">Experiences</div>
+					<div class="template6-info">
+						<div class="template6-work_row">
+							<div class="template6-work_col1">
+								<div class="template6-work_name">Graphic Designer</div>
+								<div class="template6-work_date">2015 - 2017</div>
+							</div>
+							<div class="template6-work_col2">
+								<div class="template6-work_post">Soft Design Studios</div>
+								<div class="template6-work_desc">
+									<p>Porttitor amet massa Done cporttitor dolor et nisl molestie ium feliscon lore ipsum dolor tfringilla. lorem lorem ipsum. ollcitudin est dolor time. Done cporttitor.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template6-work_row">
+							<div class="template6-work_col1">
+								<div class="template6-work_name">WEB DESIGNER</div>
+								<div class="template6-work_date">2013 - 2015</div>
+							</div>
+							<div class="template6-work_col2">
+								<div class="template6-work_post">WEB TECH LTD</div>
+								<div class="template6-work_desc">
+									<p>Porttitor amet massa Done cporttitor dolor et nisl molestie ium feliscon lore ipsum dolor tfringilla. lorem lorem ipsum. ollcitudin est dolor time. Done cporttitor.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template6-work_row">
+							<div class="template6-work_col1">
+								<div class="template6-work_name">LEAD WEB DESIGNER</div>
+								<div class="template6-work_date">2010 - 2013</div>
+							</div>
+							<div class="template6-work_col2">
+								<div class="template6-work_post">DEV CREATIVE SOLUTIONS</div>
+								<div class="template6-work_desc">
+									<p>Porttitor amet massa Done cporttitor dolor et nisl molestie ium feliscon lore ipsum dolor tfringilla. lorem lorem ipsum. ollcitudin est dolor time. Done cporttitor.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template6-block template6-education">
+					<div class="template6-title">Education</div>
+					<div class="template6-info">
+						<div class="template6-education_row">
+							<div class="template6-education_col1">
+								<div class="template6-education_name">UNIVERSITY OF LOREM</div>
+								<div class="template6-education_date">2008 - 2010</div>
+							</div>
+							<div class="template6-education_col2">
+								<div class="template6-education_post">CERTIFICATE OF WEB TRAINIG</div>
+								<div class="template6-education_desc">
+									<p>Porttitor amet massa Done cporttitor dolor et nisl molestie ium feliscon lore ipsum dolor tfringilla. lorem lorem ipsum. ollcitudin est dolor time. Done cporttitor.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template6-education_row">
+							<div class="template6-education_col1">
+								<div class="template6-education_name">UNIVERSITY OF LOREM</div>
+								<div class="template6-education_date">2007 - 2009</div>
+							</div>
+							<div class="template6-education_col2">
+								<div class="template6-education_post">BECHELOR OF ART DIRECTOR</div>
+								<div class="template6-education_desc">
+									<p>Porttitor amet massa Done cporttitor dolor et nisl molestie ium feliscon lore ipsum dolor tfringilla. lorem lorem ipsum. ollcitudin est dolor time. Done cporttitor.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template6-education_row">
+							<div class="template6-education_col1">
+								<div class="template6-education_name">UNIVERSITY OF LOREM</div>
+								<div class="template6-education_date">2007 - 2009</div>
+							</div>
+							<div class="template6-education_col2">
+								<div class="template6-education_post">BECHELOR OF ART DIRECTOR</div>
+								<div class="template6-education_desc">
+									<p>Porttitor amet massa Done cporttitor dolor et nisl molestie ium feliscon lore ipsum dolor tfringilla. lorem lorem ipsum. ollcitudin est dolor time. Done cporttitor.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="template6-col3">
+				<div class="template6-block template6-skills">
+					<div class="template6-title">Skills</div>
+					<div class="template6-info">
+						<div class="template6-skills_item">
+							<div class="template6-skills_name">skill 01</div>
+							<div class="template6-skills_inner">
+								<div class="template6-skills_progress">
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+									</ul>
+								</div>
+								<div class="template6-skills_date">2 Years</div>
+							</div>
+						</div>
+						<div class="template6-skills_item">
+							<div class="template6-skills_name">skill 01</div>
+							<div class="template6-skills_inner">
+								<div class="template6-skills_progress">
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+									</ul>
+								</div>
+								<div class="template6-skills_date">2 Years</div>
+							</div>
+						</div>
+						<div class="template6-skills_item">
+							<div class="template6-skills_name">skill 02</div>
+							<div class="template6-skills_inner">
+								<div class="template6-skills_progress">
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="template6-skills_date">2 Years</div>
+							</div>
+						</div>
+						<div class="template6-skills_item">
+							<div class="template6-skills_name">skill 02</div>
+							<div class="template6-skills_inner">
+								<div class="template6-skills_progress">
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="template6-skills_date">2 Years</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

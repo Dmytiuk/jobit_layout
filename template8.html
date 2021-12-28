@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Резюме 8</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://artandrey.github.io/jobitt-demo/page/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			width: 21cm;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		p {
+			line-height: 16px;
+		}
+		.template-wrapper {
+			position: relative;
+			background: white;
+		    max-width: 1000px;
+		    width: 100%;
+		    margin: auto; 
+		}
+		.template-photo {
+			overflow: hidden;
+		}
+		.template-photo img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.template8 {
+			background: #F0EFF0;
+			color: #606161;
+			font: 10px 'Montserrat', sans-serif;
+			padding: 4em 9em 4em 5em;
+		}
+		.template8 a {
+			color: #606161;
+			text-decoration: none;
+		}
+		.template8-main_title {
+			text-align: center;
+			padding-bottom: 7em;
+		}
+		.template8-main_title h1 {
+			color: #353E91;
+			font: 800 7em/1em 'Abhaya Libre', sans-serif;
+		}
+		.template8-main_title span {
+		    color: black;
+		    font-weight: 500;
+		    font-size: 1.6em;
+		    letter-spacing: .1em;
+		}
+		.template8-title {
+		    color: #353E91;
+		    font: 800 3em/1em 'Abhaya Libre', sans-serif;
+		    padding-bottom: .7em;
+		}
+		.template8-block:last-child {
+			margin-bottom: 0;
+		}
+		.template8-block {
+			margin-bottom: 3.5em;
+		}
+		.template8-contact ul {
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		}
+		.template8-contact ul li:last-child {
+			margin-right: 0;
+		}
+		.template8-contact ul li {
+			display: inline-flex;
+		    align-items: center;
+			margin-right: 5em;
+		}
+		.template8-contact_icon {
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    border: .1em solid #606161;
+		    border-radius: 100%;
+		    width: 2.8em;
+		    height: 2.8em;
+		}
+		.template8-contact_icon svg {
+			height: .9em;
+		}
+		.template8-contact_icon svg rect, .template8-contact_icon svg polyline {
+		    fill: none;
+		    stroke: #353e91;
+		    stroke-miterlimit: 10;
+		    stroke-width: 1.13px;
+		}
+		.template8-contact_icon svg path {
+			fill: #353e91;
+		}
+		.template8-contact_text {
+			margin-left: 1em;
+		}
+		.template8-main {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.template8-col1 {
+			width: 35%;
+		}
+		.template8-col2 {
+			width: 65%;
+			padding-left: 6em;
+		}
+		.template8-education_row:last-child {
+			padding-bottom: 0;
+		}
+		.template8-education_row {
+			padding-bottom: 2.5em;
+		}
+		.template8-education_name {
+			color: black;
+			font-weight: 500;
+		    font-size: 1.6em;
+		    padding-bottom: .3em;
+		}
+		.template8-education_school {
+			color: black;
+			padding-bottom: .5em;
+		}
+		.template8-education_date {
+			color: #EA9EAF;
+			font-family: 'Mulish', sans-serif;
+			font-weight: 300;
+		}
+		.template8-skills_item:last-child {
+			margin-bottom: 0;
+		}
+		.template8-skills_item {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 1em;
+		}
+		.template8-skills_name {
+			color: black;
+		    font-size: 1.4em;
+		}
+		.template8-skills_progress ul {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.template8-skills_progress ul li:last-child {
+			margin-right: 0;
+		}
+		.template8-skills_progress ul li.active {
+			background: #353E91;
+		}
+		.template8-skills_progress ul li {
+			border: .1em solid #353E91;
+			width: 1em;
+		    height: 1em;
+			margin-right: 1em;
+		}
+		.template8-work_row:last-child {
+			padding-bottom: 0;
+		}
+		.template8-work_row {
+			padding-bottom: 2em;
+		}
+		.template8-work_head {
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: flex-end;
+		    justify-content: space-between;
+		    padding-bottom: .7em;
+		}
+		.template8-work_post {
+		    color: black;
+		    font-size: 1.6em;
+		    font-weight: 500;
+		}
+		.template8-work_date {
+			color: #EA9EAF;
+			font-family: 'Mulish', sans-serif;
+			font-weight: 300;
+			padding-bottom: .1em;
+		}
+		.template8-work_name {
+			color: black;
+		}
+		.template8-work_desc {
+			padding-top: 2em;
+		}
+		.template8-work_desc p {
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<div class="template8 template-wrapper">
+		<div class="template8-main_title">
+			<h1>Sara Harper</h1>
+			<span>Digital Marketing Expert</span>
+		</div>
+		<div class="template8-block template8-contact">
+			<ul>
+				<li>
+					<span class="template8-contact_icon">
+						<svg viewBox="0 0 10.73 6.76"><rect x="0.57" y="0.57" width="9.6" height="5.63"/><polyline points="0.57 0.57 5.36 3.38 10.16 0.57"/></svg>
+					</span>
+					<a class="template8-contact_text" href="mailto:mail@website.com">mail@website.com</a>
+				</li>
+				<li>
+					<span class="template8-contact_icon">
+						<svg viewBox="0 0 6.46 6.46"><path d="M6.36,5.78l-.58.58a.34.34,0,0,1-.48,0L3.48,4.53a.42.42,0,0,0-.59,0L2,5.44a.42.42,0,0,1-.7-.19L0,.53A.42.42,0,0,1,.52,0L5.25,1.28a.42.42,0,0,1,.19.7l-.91.9a.42.42,0,0,0,0,.59L6.36,5.3A.34.34,0,0,1,6.36,5.78Z"/></svg>
+					</span>
+					<a class="template8-contact_text" href="www.yourwebsite.com" target="_blank">www.yourwebsite.com</a>
+				</li>
+				<li>
+					<span class="template8-contact_icon">
+						<svg viewBox="0 0 7.82 8.6"><path d="M7.1,4.28l-.87,1-1,1.23-.88,1a3,3,0,0,1-3.95.51A1,1,0,0,1,.24,6.63L1,5.79a1,1,0,0,1,.72-.33.91.91,0,0,1,.58.2,1,1,0,0,0,1.31-.14l.21-.25L4.76,4,5,3.79A1,1,0,0,0,4.9,2.48a.94.94,0,0,1-.29-.69.91.91,0,0,1,.23-.61L5.55.34A1,1,0,0,1,7,.3,3,3,0,0,1,7.1,4.28Z"/></svg>
+					</span>
+					<a class="template8-contact_text" href="tel:+2434232534234">+2 434-232-534234</a>
+				</li>
+			</ul>
+		</div>
+		<div class="template8-main">
+			<div class="template8-block template8-profile">
+				<div class="template8-title">Profile</div>
+				<div class="template8-info">
+					<p>My Name Is Henry Watson lorem empus id fringilla molestie ornare diam in olestie ipsum etium rosn ollicitudin est, porttitor amet hitmassa Done cporttitor dolor shit dolor kiren lorem nisl molestie pretium etfring. is the shitp lorem ipcum retiumci amet is tudinest.moles tium lorem olestie pretium apaza all the rosen. fringilla lorem ipsum.</p>
+				</div>	
+			</div>
+			<div class="template8-col1">
+				<div class="template8-block template8-education">
+					<div class="template8-title">Education</div>
+					<div class="template8-info">
+						<div class="template8-education_row">
+							<div class="template8-education_name">Name Of Degree</div>
+							<div class="template8-education_school">Place School Here</div>
+							<div class="template8-education_date">2014 - 2017</div>
+						</div>
+						<div class="template8-education_row">
+							<div class="template8-education_name">Name Of Degree</div>
+							<div class="template8-education_school">Place School Here</div>
+							<div class="template8-education_date">2015 - 2019</div>
+						</div>
+						<div class="template8-education_row">
+							<div class="template8-education_name">Name Of Degree</div>
+							<div class="template8-education_school">Place School Here</div>
+							<div class="template8-education_date">2015 - 2016</div>
+						</div>
+						<div class="template8-education_row">
+							<div class="template8-education_name">Name Of Degree</div>
+							<div class="template8-education_school">Place School Here</div>
+							<div class="template8-education_date">2013 - 2018</div>
+						</div>
+					</div>
+				</div>
+				<div class="template8-block template8-skills">
+					<div class="template8-title">Skills</div>
+					<div class="template8-info">
+						<div class="template8-skills_item">
+							<div class="template8-skills_name">Marketing</div>
+							<div class="template8-skills_progress">
+								<ul>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="template8-skills_item">
+							<div class="template8-skills_name">Content Curation</div>
+							<div class="template8-skills_progress">
+								<ul>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="template8-skills_item">
+							<div class="template8-skills_name">Lead Generation</div>
+							<div class="template8-skills_progress">
+								<ul>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="template8-skills_item">
+							<div class="template8-skills_name">Prospecting</div>
+							<div class="template8-skills_progress">
+								<ul>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="template8-skills_item">
+							<div class="template8-skills_name">Presentations</div>
+							<div class="template8-skills_progress">
+								<ul>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+									<li class="active"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="template8-col2">
+				<div class="template8-block template8-work">
+					<div class="template8-title">Work Experiences</div>
+					<div class="template8-info">
+						<div class="template8-work_row">
+							<div class="template8-work_head">
+								<div class="template8-work_post">D&M Head of Marketing</div>
+								<div class="template8-work_date">2015 - 2019</div>
+							</div>
+							<div class="template8-work_name">Name of Company</div>
+							<div class="template8-work_desc">
+								<p>Briefly Describe your responsibilites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id elit congue, lacinia justo ut, eleifend metus. Suspendisse aliquet malesuada ex. Briefly Describe your responsibilites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id elit congue, lacinia justo ut, eleifend metus. Suspendisse aliquet malesuada ex.</p>
+							</div>
+						</div>
+						<div class="template8-work_row">
+							<div class="template8-work_head">
+								<div class="template8-work_post">D&M Head of Marketing</div>
+								<div class="template8-work_date">2015 - 2019</div>
+							</div>
+							<div class="template8-work_name">Name of Company</div>
+							<div class="template8-work_desc">
+								<p>Briefly Describe your responsibilites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id elit congue, lacinia justo ut, eleifend metus. Suspendisse aliquet malesuada ex. Briefly Describe your responsibilites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id elit congue, lacinia justo ut, eleifend metus. Suspendisse aliquet malesuada ex.</p>
+							</div>
+						</div>
+						<div class="template8-work_row">
+							<div class="template8-work_head">
+								<div class="template8-work_post">D&M Head of Marketing</div>
+								<div class="template8-work_date">2015 - 2019</div>
+							</div>
+							<div class="template8-work_name">Name of Company</div>
+							<div class="template8-work_desc">
+								<p>Briefly Describe your responsibilites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id elit congue, lacinia justo ut, eleifend metus. Suspendisse aliquet malesuada ex. Briefly Describe your responsibilites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id elit congue, lacinia justo ut, eleifend metus. Suspendisse aliquet malesuada ex.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Резюме 7</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://artandrey.github.io/jobitt-demo/page/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="fonts/Montserrat/fonts.css">
+	<style type="text/css">
+		:root {
+			--main-color: #EFEFEF;
+			--main-font-color: #363636;
+			--main-font: 'Montserrat';
+			--font--4: -4px;
+			--font--2: -2px;
+			--font--15: -1.5px;
+			--font--1: -1px;
+			--font--05: -0.5px;
+			--font-0: 0px;
+			--font-05: .1em;
+			--font-1: .2em;
+			--font-15: .3em;
+			--font-2: .4em;
+			--font-4: .8em;
+		}
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			width: 21cm;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		p {
+			line-height: 16px;
+		}
+		.template-wrapper {
+			position: relative;
+			background: white;
+		    max-width: 1000px;
+		    width: 100%;
+		    margin: auto; 
+		}
+		.template-photo {
+			overflow: hidden;
+		}
+		.template-photo img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.template7 {
+			background: #F6F6F6;
+			color: #777878;
+			font: 10px 'Montserrat', sans-serif;
+		}
+		.template7 a {
+			color: #777878;
+			text-decoration: none;
+		}
+		.template7-main {
+		    display: flex;
+		    flex-wrap: wrap;
+		}
+		.template7-col1 {
+			background: #EFEFEF;
+		    width: 45%;
+		    padding: 2.5em 4.5em;
+		}
+		.template7-col2 {
+			width: 55%;
+			padding: 3.5em 7em 3.5em 8em;
+		}
+		.template7-block:last-child {
+			margin-bottom: 0;
+		}
+		.template7-block {
+			margin-bottom: 4.5em;
+		}
+		.template7-welcome {
+			text-align: center;
+		}
+		.template7-photo {
+			padding-left: 1.5em;
+			padding-bottom: 1em;
+			margin-bottom: 1.5em;
+			overflow: hidden;
+			border-bottom: 0.1em solid #2C2C2C;
+		}
+		.template7-photo img {
+			width: calc(100% - 1.5em);
+			height: auto;
+			border-radius: 100%;
+		}
+		.template7-main_title {
+
+		}
+		.template7-main_title h1 {
+		    color: #2C2C2C;
+		    font-weight: normal;
+		    font-size: 3.7em;
+		    text-transform: uppercase;
+		    line-height: 1em;
+		    padding-bottom: .1em;
+		    margin-bottom: 40px;
+		}
+		.template7-position {
+		    color: #505050;
+		    font-size: 1.2em;
+		    text-transform: uppercase;
+		    letter-spacing: .1em;
+			text-align: center;
+		}
+		.template7-title {
+			border-bottom: .1em solid #2C2C2C;
+		    color: #2C2C2C;
+		    font-size: 1.4em;
+		    text-transform: uppercase;
+		    letter-spacing: .1em;
+		    text-align: center;
+		    padding-bottom: .4em;
+		    margin-bottom: 1.5em;
+		}
+		.template7-subtitle {
+
+		}
+		.template7-info {
+			padding-left: 1.5rem;
+		}
+		.template7-other .template7-info ul li {
+			padding-bottom: .8em;
+		}
+		.template7-contact .template7-info ul li:last-child {
+			padding-bottom: 0;
+		}
+		.template7-contact .template7-info ul li {
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    padding-bottom: .8em;
+		}
+		.template7-contact .template7-info ul li div {
+			font-weight: 500;
+			margin-left: 1.2em;
+		}
+		.template7-contact_icon svg {
+			width: 2.2em;
+		    height: 2.2em;
+		}
+		.template7-skills_item:last-child {
+			margin-bottom: 0;
+		}
+		.template7-skills_item {
+			margin-bottom: 2em;
+		}
+		.template7-skills_experience {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.template7-skills_name {
+		    color: #2C2C2C;
+		    font-size: 1.2em;
+		}
+		.template7-skills_progress {
+			margin-right: .5em;
+		    background: #505050;
+		    height: .3em;
+		}
+		.template7-skills_date {
+			width: fit-content;
+			white-space: nowrap;
+		}
+		.template7-col2 .template7-info {
+			padding: 0 .5em;
+		}
+		.template7-work_row:last-child {
+			padding-bottom: 0;
+		}
+		.template7-work_row {
+			padding-bottom: 4em;
+		}
+		.template7-work_row-inner {
+		    display: flex;
+		    align-items: center;
+		}
+		.template7-work_row-inner span {
+			font-weight: 500;
+		}
+		.template7-work_row-inner span:last-child:after {
+			display: none;
+		}
+		.template7-work_row-inner span:after {
+			content: '|';
+			margin: 0 .7em;
+		}
+		.template7-work_desc {
+			padding-top: 2em;
+		}
+		.template7-education_row:last-child {
+			padding-bottom: 0;
+		}
+		.template7-education_row {
+			padding-bottom: 4em;
+		}
+		.template7-education_post {
+		    color: #2C2C2C;
+		    padding-bottom: .1em;
+		}
+		.template7-education_row-inner {
+		    display: flex;
+		    flex-direction: column;
+		}
+		.template7-education_row-inner span {
+			font-weight: 500;
+		}
+		.template7-education_row-inner span:last-child:after {
+			display: none;
+		}
+		.template7-education_desc {
+			padding-top: 2em;
+		}
+		.template7-languagea ul li {
+			padding-bottom: 0;
+		}
+		.template7-languagea_name {
+			color: #2C2C2C;
+		    font-size: 1.8em;
+		}
+		.template7-languagea_level:before {
+			content: '-';
+			margin-right: .4em;
+		}
+	</style>
+</head>
+<body>
+	<div class="template7 template-wrapper">
+		<div class="template7-main">
+			<div class="template7-col1">
+				<div class="template7-block template7-welcome">
+					<div class="template7-photo">
+						<img src="img/photo1.jpg" alt="Photo">
+					</div>
+					<span class="template7-position">Industrial Designer</span>
+				</div>
+				<div class="template7-block template7-contact">
+					<div class="template7-title">Contact</div>
+					<div class="template7-info">
+						<ul>
+							<li>
+								<span class="template7-contact_icon">
+									<svg viewBox="0 0 16.67 10.82"><path d="M8.33,7.64,0,1.1v9.72H16.67V1.1Z"/><path d="M16.49,0H.18L8.33,6.39Z"/></svg>
+								</span>
+								<div>
+									<p>Email</p>
+									<a class="template7-contact_text" href="mailto:sarawalter@mail.com">sarawalter@mail.com</a>
+								</div>
+							</li>
+							<li>
+								<span class="template7-contact_icon">
+									<svg viewBox="0 0 16.63 16.63"><path d="M12.33,7.07A2.78,2.78,0,0,0,9,3.72l.22.95a1.81,1.81,0,0,1,2.18,2.18Z"/><path class="cls-1" d="M12.4,3.65A4,4,0,0,1,13.47,7.4l.95.22a5,5,0,0,0-6-6l.22,1A4,4,0,0,1,12.4,3.65Z"/><path d="M1.85,1.15,3,0,7.46,4.46,6.31,5.6Z"/><path d="M11,10.32l1.15-1.14,4.45,4.45-1.14,1.15Z"/><path d="M7.78,8.89a16.35,16.35,0,0,1-2.1-2.54L1.16,1.84l-.45.45h0c-.87.94-.93,2.52-.18,4.46a16.87,16.87,0,0,0,3.82,5.53,16.73,16.73,0,0,0,5.6,3.84,6.59,6.59,0,0,0,2.37.5,2.84,2.84,0,0,0,2.09-.76l.4-.4L10.33,11A17.09,17.09,0,0,1,7.78,8.89Z"/></svg>
+								</span>
+								<div>
+									<p>Phone</p>
+									<a class="template7-contact_text" href="tel:+2434232534234">+2 434-232-534234</a>
+								</div>
+							</li>
+							<li>
+								<span class="template7-contact_icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.98 16.98"><defs><style>.cls-1{fill:#1d1d1b;fill-rule:evenodd;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Contact"><path class="cls-1" d="M12.73,12.4a3.72,3.72,0,0,1-1.65,1.23,6.68,6.68,0,0,1-2.52.44,6.27,6.27,0,0,1-2.91-.61A3.64,3.64,0,0,1,4.32,12.3a2.55,2.55,0,0,1-.52-1.45,1,1,0,0,1,.34-.75A1.23,1.23,0,0,1,5,9.79,1.07,1.07,0,0,1,5.7,10a1.84,1.84,0,0,1,.48.69,3.77,3.77,0,0,0,.46.81,1.74,1.74,0,0,0,.68.52,2.75,2.75,0,0,0,1.17.21,2.86,2.86,0,0,0,1.63-.42,1.17,1.17,0,0,0,.61-1,1,1,0,0,0-.32-.75,2.16,2.16,0,0,0-.86-.47,15.33,15.33,0,0,0-1.49-.37,12.14,12.14,0,0,1-2.12-.62,3.48,3.48,0,0,1-1.39-1,2.27,2.27,0,0,1-.28-.45A2.63,2.63,0,0,1,4,6a2.53,2.53,0,0,1,.55-1.61A3.4,3.4,0,0,1,6.15,3.33,7.06,7.06,0,0,1,8.52,3a6.56,6.56,0,0,1,1.89.25,3.9,3.9,0,0,1,1.34.66,2.77,2.77,0,0,1,.79.87,1.84,1.84,0,0,1,.25.91,1.08,1.08,0,0,1-.33.77,1.1,1.1,0,0,1-.83.34,1,1,0,0,1-.7-.21,2.64,2.64,0,0,1-.48-.64A2.69,2.69,0,0,0,9.72,5a2.26,2.26,0,0,0-1.35-.31A2.58,2.58,0,0,0,7,5.06a.93.93,0,0,0-.5.76.74.74,0,0,0,.16.47,1.45,1.45,0,0,0,.49.36,3.23,3.23,0,0,0,.65.25l.14,0,1,.23a18.37,18.37,0,0,1,1.79.47,5.59,5.59,0,0,1,1.39.62,2.75,2.75,0,0,1,.91,1,2.8,2.8,0,0,1,.33,1.41,3,3,0,0,1-.57,1.78Zm3.76-2.11a8,8,0,0,0,.19-1.71c0-.2,0-.4,0-.6A8,8,0,0,0,8.58.6,9,9,0,0,0,7.19.71,4.71,4.71,0,0,0,0,4.64,4.56,4.56,0,0,0,.64,7a8.1,8.1,0,0,0-.13.88q0,.36,0,.72a8.08,8.08,0,0,0,9.58,7.85,4.74,4.74,0,0,0,2.22.55A4.66,4.66,0,0,0,17,12.35a4.6,4.6,0,0,0-.49-2.06Z"/></g></g></svg>
+								</span>
+								<div>
+									<p>Skype</p>
+									<a class="template7-contact_text" href="#">+2 434-232-534234</a>
+								</div>
+							</li>
+							<li>
+								<span class="template7-contact_icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.03 13.14"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Contact"><path class="cls-1" d="M15.55,0l-.18,0L.31,5.75a.49.49,0,0,0,0,.92L3.82,7.85l2.11,4.21h0v0h0a.21.21,0,0,0,.2.13.19.19,0,0,0,.14,0l2-1.67L6.05,8.8,6.22,11,4.64,7.72l8.42-5-7,6.13,5.45,4.14a1,1,0,0,0,1.57-.55L16,.6A.48.48,0,0,0,15.55,0Z"/></g></g></svg>
+								</span>
+									<div>
+									<p>Telegram</p>
+									<a class="template7-contact_text" href="#">+2 434-232-534234</a>
+								</div>
+							</li>
+							<li>
+								<span class="template7-contact_icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.67 14.57"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Contact"><rect class="cls-1" x="7.03" y="9.37" width="2.6" height="5.2"/><path class="cls-1" d="M8.33,3.85,2.41,7.67v6.9H6.06V8.39h4.55v6.18h3.65V7.67Z"/><path class="cls-1" d="M15.86,4.77,8.33,0,.81,4.77A1.66,1.66,0,0,0,.75,7.58l7.58-4.9,7.59,4.9A1.77,1.77,0,0,0,16.46,7a1.66,1.66,0,0,0-.6-2.23Z"/></g></g></svg>								</span>
+								<div>
+									<p>Address</p>
+									<p>Your Country</p>
+									<p>Your city</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<hr style="margin: 1.5em 0">
+					<div class="template7-info">
+						<ul>
+							<li>
+								<span class="template7-contact_icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.67 14.2"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Contact"><path class="cls-1" d="M16.67,8.57V0H0V8.57Z"/><path class="cls-1" d="M16.67,9.55H0V12H6.56L6.4,13.23H5.64v1H11v-1h-.76L10.11,12h6.56Z"/></g></g></svg>
+								</span>
+								<div>
+									<p>Portfolio</p>
+									<a class="template7-contact_text" href="your portfolio.com">your portfolio.com</a>
+								</div>
+							</li>
+							<li>
+								<span class="template7-contact_icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.07 18.04"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Contact"><path class="cls-1" d="M.3,6H4.05V18H.3ZM2.17,0A2.17,2.17,0,1,1,0,2.17,2.17,2.17,0,0,1,2.17,0M6.39,18h3.74v-6c0-1.57.3-3.1,2.25-3.1s1.95,1.8,1.95,3.2V18h3.74V11.43c0-3.25-.7-5.74-4.49-5.74A4,4,0,0,0,10,7.64h0V6H6.39Z"/></g></g></svg>
+								</span>
+								<div>
+									<p>Linkedin</p>
+									<a class="template7-contact_text" href="your portfolio.com">your portfolio.com</a>
+								</div>
+							</li>
+							<li>
+								<span class="template7-contact_icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.1 18.22"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Contact"><path class="cls-1" d="M5.93,18.22H.34A.59.59,0,0,1,0,17.64C0,12,0,6.27,0,.58,0,.16.17,0,.59,0h16.1a.42.42,0,0,1,.38.34,1.53,1.53,0,0,1,0,.3V18.22H11.28a.47.47,0,0,1-.32-.47c0-.11,0-.22,0-.33,0-.83,0-1.65,0-2.48a2.42,2.42,0,0,0-.41-1.45l-.16-.26.16,0a6.8,6.8,0,0,0,1.7-.46,4.47,4.47,0,0,0,1-.61,3.48,3.48,0,0,0,.72-.9,5.74,5.74,0,0,0,.62-2,4.68,4.68,0,0,0-.29-2.4c-.12-.28-.3-.54-.45-.82a.69.69,0,0,1-.13-.5,3.89,3.89,0,0,0-.08-2.14c-.07-.22-.14-.28-.36-.27a2.41,2.41,0,0,0-1.14.34c-.34.21-.71.37-1,.58a.41.41,0,0,1-.34,0A1.72,1.72,0,0,0,10.52,4a9.11,9.11,0,0,0-3-.14c-.36.05-.71.15-1.06.22a.33.33,0,0,1-.24,0C6,4,5.86,3.86,5.68,3.76A4.49,4.49,0,0,0,4,3.11a.26.26,0,0,0-.31.2,3.71,3.71,0,0,0-.13,2.11.65.65,0,0,1-.14.63,3.72,3.72,0,0,0-.71,2,6.22,6.22,0,0,0,.24,2.31,3.62,3.62,0,0,0,1.34,2A4,4,0,0,0,5.69,13c.38.1.77.17,1.18.25a2.8,2.8,0,0,0-.55,1.17.26.26,0,0,1-.12.15,1.71,1.71,0,0,1-1.89-.05,4.77,4.77,0,0,1-.92-1A2.67,2.67,0,0,0,2.91,13a1.26,1.26,0,0,0-1-.26c-.19,0-.24.17-.11.31a1,1,0,0,0,.21.19A3,3,0,0,1,3.1,14.69,2.06,2.06,0,0,0,4.78,16a5.17,5.17,0,0,0,.88,0l.62,0c0,.59,0,1.15,0,1.72A.47.47,0,0,1,5.93,18.22Z"/></g></g></svg>								</span>
+								<div>
+									<p>GitHub</p>
+									<a class="template7-contact_text" href="your portfolio.com">your portfolio.com</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="template7-block template7-about">
+					<div class="template7-title">Profile</div>
+					<div class="template7-info">
+						<p>My Name Is Henry Watson lorem empus id fringilla molestie ornare diam in olestie ipsum etium rosn ollicitudin est, porttitor amet hitmassa Done cporttitor dolor shit dolor kiren lorem nisl molestie pretium etfring. is the shitp lorem ipcum retiumci amet is tudinest.moles tium lorem olestie pretium apaza all the rosen. fringilla lorem ipsum.</p>
+					</div>	
+				</div>
+				<div class="template7-block template7-skills">
+					<div class="template7-title">Skills</div>
+					<div class="template7-info">
+						<div class="template7-skills_item">
+							<span class="template7-skills_name template7-subtitle">Skills 1</span>
+							<div class="template7-skills_experience">
+								<div style="width: 100%" class="template7-skills_progress"></div>
+								<span class="template7-skills_date">2 Years</span>
+							</div>
+						</div>
+						<div class="template7-skills_item">
+							<span class="template7-skills_name">Skills 2</span>
+							<div class="template7-skills_experience">
+								<div style="width: 100%" class="template7-skills_progress"></div>
+								<span class="template7-skills_date">2 Years</span>
+							</div>
+						</div>
+						<div class="template7-skills_item">
+							<span class="template7-skills_name">Skills 3</span>
+							<div class="template7-skills_experience">
+								<div style="width: 100%" class="template7-skills_progress"></div>
+								<span class="template7-skills_date">2 Years</span>
+							</div>
+						</div>
+						<div class="template7-skills_item">
+							<span class="template7-skills_name">Skills 4</span>
+							<div class="template7-skills_experience">
+								<div style="width: 100%" class="template7-skills_progress"></div>
+								<span class="template7-skills_date">2 Years</span>
+							</div>
+						</div>
+						<div class="template7-skills_item">
+							<span class="template7-skills_name">Skills 5</span>
+							<div class="template7-skills_experience">
+								<div style="width: 100%" class="template7-skills_progress"></div>
+								<span class="template7-skills_date">2 Years</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template7-block template7-other">
+					<div class="template7-title">Lorem ipsum</div>
+					<div class="template7-info">
+						<ul>
+							<li>
+								<span class="template7-subtitle">Your page</span>
+								<br>
+								<a href="#">link to your page.com</a>
+							</li>
+							<li>
+								<span class="template7-subtitle">Your page</span>
+								<br>
+								<a href="#">link to your page.com</a>
+							</li>
+							<li>
+								<span class="template7-subtitle">Your page</span>
+								<br>
+								<a href="#">link to your page.com</a>
+							</li>
+							<li>
+								<span class="template7-subtitle">Your page</span>
+								<br>
+								<a href="#">link to your page.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="template7-block template7-languagea">
+					<div class="template7-title">Languagea</div>
+					<div class="template7-info" style="padding-left: 0">
+						<ul>
+							<li>
+								<span class="template7-languagea_name">English</span>
+								<span class="template7-languagea_level">Native</span>
+							</li>
+							<li>
+								<span class="template7-languagea_name">Spanish</span>
+								<span class="template7-languagea_level">Professional</span>
+							</li>
+							<li>
+								<span class="template7-languagea_name">Italian</span>
+								<span class="template7-languagea_level">Basic</span>
+							</li>
+							<li>
+								<span class="template7-languagea_name">Mandarin</span>
+								<span class="template7-languagea_level">Basic</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="template7-col2">
+				<div class="template7-main_title">
+					<h1>
+						SARA <br>
+						WALTON <br>
+						STEWART
+					</h1>
+				</div>
+				<div class="template7-block template7-work">
+					<div class="template7-title">Work Experiences</div>
+					<div class="template7-info">
+						<div class="template7-work_row">
+							<div class="template7-work_post template7-subtitle">Art Director</div>
+							<div class="template7-work_row-inner">
+								<span class="template7-work_name">Company Name</span>
+								<span class="template7-work_date">Month/2020 - <strong>Present</strong></span>
+							</div>
+							<div class="template7-work_desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a ex molestie sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="template7-work_row">
+							<div class="template7-work_post template7-subtitle">Art Director</div>
+							<div class="template7-work_row-inner">
+								<span class="template7-work_name">Company Name</span>
+								<span class="template7-work_date">Month/2020 - <strong>Present</strong></span>
+							</div>
+							<div class="template7-work_desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a ex molestie sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="template7-work_row">
+							<div class="template7-work_post template7-subtitle">Art Director</div>
+							<div class="template7-work_row-inner">
+								<span class="template7-work_name">Company Name</span>
+								<span class="template7-work_date">Month/2020 - <strong>Present</strong></span>
+							</div>
+							<div class="template7-work_desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a ex molestie sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template7-block template7-education">
+					<div class="template7-title">Education</div>
+					<div class="template7-info">
+						<div class="template7-education_row">
+							<div class="template7-education_post template7-subtitle">Master Degree</div>
+							<div class="template7-education_row-inner">
+								<span class="template7-education_name">University Name</span>
+								<span class="template7-education_date">2020 - Month/2021</span>
+								<span class="template7-education_stage">Degree Name - Master of Fine Arts (M.F.A.)</span>
+								<span class="template7-education_field">Field of study- Graphic design</span>
+							</div>
+							<div class="template7-education_desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a ex molestie sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="template7-education_row">
+							<div class="template7-education_post template7-subtitle">Master Degree</div>
+							<div class="template7-education_row-inner">
+								<span class="template7-education_name">University Name</span>
+								<span class="template7-education_date">2020 - Month/2021</span>
+								<span class="template7-education_stage">Degree Name - Master of Fine Arts (M.F.A.)</span>
+								<span class="template7-education_field">Field of study- Graphic design</span>
+							</div>
+							<div class="template7-education_desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a ex molestie sit amet lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template7-block">
+					<div class="template7-title">Lorem Ipsum</div>
+					<div class="template7-info">
+						<p>Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Vivamus aliquam orci a ex
+							molestie sit amet lorem ipsum dolor
+							sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a
+							ex molestie sit amet lorem ipsum dolor
+							sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a
+							ex molestie sit amet lorem ipsum dolor sit</p>
+					</div>
+				</div>
+				<div class="template7-block">
+					<div class="template7-title">Lorem Ipsum</div>
+					<div class="template7-info">
+						<p>Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Vivamus aliquam orci a ex
+							molestie sit amet lorem ipsum dolor
+							sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a
+							ex molestie sit amet lorem ipsum dolor
+							sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a
+							ex molestie sit amet lorem ipsum dolor sit</p>
+					</div>
+				</div>
+				<div class="template7-block">
+					<div class="template7-title">Lorem Ipsum</div>
+					<div class="template7-info">
+						<p>Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Vivamus aliquam orci a ex
+							molestie sit amet lorem ipsum dolor
+							sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a
+							ex molestie sit amet lorem ipsum dolor
+							sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam orci a
+							ex molestie sit amet lorem ipsum dolor sit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

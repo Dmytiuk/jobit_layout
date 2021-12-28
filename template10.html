@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Резюме 10</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://artandrey.github.io/jobitt-demo/page/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="fonts/Playfair_Display/fonts.css">
+	<link rel="stylesheet" href="fonts/Poppins/fonts.css">
+	<style type="text/css">
+		:root {
+			--main-color: white;
+			--main-font-color: #2F4555;
+			--main-font: 'Poppins';
+			--font--4: -4px;
+			--font--2: -2px;
+			--font--15: -1.5px;
+			--font--1: -1px;
+			--font--05: -0.5px;
+			--font-0: 0px;
+			--font-05: .1em;
+			--font-1: .2em;
+			--font-15: .3em;
+			--font-2: .4em;
+			--font-4: .8em;
+		}
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			width: 21cm;
+		}
+
+		.template-wrapper {
+			position: relative;
+			background: white;
+		    max-width: 1000px;
+		    width: 100%;
+		    margin: auto; 
+		}
+		.template-photo {
+			overflow: hidden;
+		}
+		.template-photo img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.template10 {
+			background: var(--main-color);
+			color: var(--main-font-color);
+			font: 10px var(--main-font), sans-serif;
+			padding: 3em 6em;
+		}
+		a {
+			color: #2F4555;
+			text-decoration: none;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		body.font--2 p, body.font--2 span, body.font--2 a, body.font--2 li {
+			font-size: calc(1.2em + var(--font--1));
+		}
+		body.font--1 p, body.font--1 span, body.font--1 a, body.font--1 li {
+			font-size: calc(1.2em + var(--font--05));
+		}
+		body.font-0 p, body.font-0 span, body.font-0 a, body.font-0 li {
+			font-size: calc(1.2em + var(--font-0));
+		}
+		body.font-1 p, body.font-1 span, body.font-1 a, body.font-1 li {
+			font-size: calc(1.2em + var(--font-05));
+		}
+		body.font-2 p, body.font-2 span, body.font-2 a, body.font-2 li {
+			font-size: calc(1.2em + var(--font-1));
+		}
+		p , span , a , li {
+			font-size: 1.2em;
+		}
+		body.font--2 p {
+			line-height: calc(16px + var(--font--1));
+		}
+		body.font--1 p {
+			line-height: calc(16px + var(--font--05));
+		}
+		body.font-0 p {
+			line-height: calc(16px + var(--font-0));
+		}
+		body.font-1 p {
+			line-height: calc(16px + var(--font-05));
+		}
+		body.font-2 p {
+			line-height: calc(16px + var(--font-1));
+		}
+		p {
+			line-height: 16px;
+		}
+		.template10-head {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    margin-bottom: 1em;
+		}
+		.template10-head_info {
+			width: calc(100% - 16em);
+			padding-right: 3em;
+		}
+		body.font--2 .template10-head_info h1 {
+			font-size: calc(3.5em + var(--font--4));
+		}
+		body.font--1 .template10-head_info h1 {
+			font-size: calc(3.5em + var(--font--2));
+		}
+		body.font-0 .template10-head_info h1 {
+			font-size: calc(3.5em + var(--font-0));
+		}
+		body.font-1 .template10-head_info h1 {
+			font-size: calc(3.5em + var(--font-2));
+		}
+		body.font-2 .template10-head_info h1 {
+			font-size: calc(3.5em + var(--font-4));
+		}
+		.template10-head_info h1 {
+		    font-size: 3.5em;
+		    font-weight: 500;
+		    margin-bottom: .5em;
+		}
+		.template10-head_contact p {
+			padding-bottom: .8em;
+		}
+		.template10-head_photo {
+			border-radius: 100%;
+		    width: 16em;
+		    height: 16em;
+		}
+		.template10-block:last-child {
+			padding-bottom: 0;
+		}
+		.template10-block {
+			padding-bottom: 3em;
+		}
+		body.font--2 .template10-title {
+			font-size: calc(2.5em + var(--font--4));
+		}
+		body.font--1 .template10-title {
+			font-size: calc(2.5em + var(--font--2));
+		}
+		body.font-0 .template10-title {
+			font-size: calc(2.5em + var(--font-0));
+		}
+		body.font-1 .template10-title {
+			font-size: calc(2.5em + var(--font-2));
+		}
+		body.font-2 .template10-title {
+			font-size: calc(2.5em + var(--font-4));
+		}
+		.template10-title {
+		    display: flex;
+		    align-items: center;
+			font: 400 2.5em 'PlayfairDisplay', sans-serif;
+			color: #000000;
+			white-space: pre;
+		}
+		.template10-title:after {
+    		content: '';
+		    border-bottom: .08em solid #000000;
+		    width: 100%;
+		    height: .08em;
+		    margin-left: .8em;
+		    margin-bottom: -.2em;
+		}
+		.template10-info {
+			padding-top: 2em;
+		}
+		.template10-info p:last-child {
+			padding-bottom: 0;
+		}
+		.template10-info p {
+			padding-bottom: 1.5em;
+		}
+		.template10-block_inner {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.template10-profile .template10-item {
+			width: 50%;
+			margin-top: 1.5em;
+		}
+		.template10-profile .template10-item p:first-of-type {
+			font-weight: bold;
+			font-family: 'Poppins', sans-serif;
+		}
+		.template10-work .template10-item {
+			display: flex;
+			width: 100%;
+			margin-bottom: 3em;
+		}
+		.template10-work .template10-item:last-of-type {
+			margin-bottom: 0;
+		}
+		.template10-work .template10-item_time {
+			width: 50%;
+			height: fit-content;
+		}
+		.template10-work .template10-item_time p:nth-of-type(2) {
+			font-weight: bold;
+			font-family: 'Poppins', sans-serif;
+		}
+		.template10-work .template10-item_info {
+			width: 50%;
+		}
+		.template10-work .template10-item_info-heading{
+			margin-bottom: .5em;
+			font-weight: 500;
+			font-family: 'Poppins', sans-serif;
+		}
+		body.font--2 .template10-small-text {
+			font-size: calc(.9em + var(--font--1));
+		}
+		body.font--1 .template10-small-text {
+			font-size: calc(.9em + var(--font--05));
+		}
+		body.font-0 .template10-small-text {
+			font-size: calc(.9em + var(--font-0));
+		}
+		body.font-1 .template10-small-text {
+			font-size: calc(.9em + var(--font-05));
+		}
+		body.font-2 .template10-small-text {
+			font-size: calc(.9em + var(--font-1));
+		}
+		.template10-small-text {
+			font-size: .9em;
+		}
+		.template10-item_info-description{
+			width: 55%;
+		}
+		.template10-work .template10-block_inner {
+			padding-top: 3em;
+		}
+		.template10-education .template10-item {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 3em;
+		}
+		.template10-education .template10-item:last-of-type {
+			margin-bottom: 0;
+		}
+		.template10-education .template10-item_time {
+			width: 40%;
+			height: fit-content;
+		}
+		.template10-education .template10-item_time p:nth-of-type(2) {
+			font-weight: bold;
+			font-family: 'Poppins', sans-serif;
+		}
+		.template10-education .template10-item_info {
+			width: 50%;
+		}
+		.template10-education .template10-item_info-heading{
+			margin-bottom: .5em;
+			font-weight: 500;
+			font-family: 'Poppins', sans-serif;
+		}
+		.template10-education .template10-block_inner {
+			padding-top: 3em;
+		}
+		.template10-skills .template10-block_inner {
+			padding-top: 3em;
+		}
+		.template10-skills .template10-block_inner {
+			width: 80%;
+			margin: 0 auto;
+			justify-content: space-between;
+		}
+		.template10-skills_item:last-child {
+			margin-bottom: 0;
+		}
+		.template10-skills_item {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			width: 40%;
+			margin-bottom: 2em;
+		}
+		.template10-skills_name {
+			font-weight: 700;
+			width: 20%;
+		}
+		.template10-skills_progress {
+			position: relative;
+			border: .1em solid #555;
+			width: 70%;
+			height: .8em;
+		}
+		.template10-skills_progress-bar {
+			border-right: .1em solid #555;
+			height: 100%;
+		}
+		.template10-skills_date {
+			position: absolute;
+			top: 0;
+			right: 0.5em;
+			width: fit-content;
+			text-align: center;
+			transform: translateY(-100%);
+		}
+		.template10-language .template10-info {
+			padding-top: 3em;
+		}
+		.template10-language .template10-info ul {
+		    display: flex;
+		    flex-wrap: wrap;
+		}
+		.template10-language .template10-info ul li {
+		    width: 50%;
+		    padding-bottom: 1.5em;
+			line-height: 1.8em;
+		}
+		.template10-language .template10-info ul li:before {
+
+		}
+	</style>
+</head>
+<body class="font-0">
+	<div class="template10 template-wrapper">
+		<div class="template10-head">
+			<div class="template10-head_info">
+				<h1>Brayden <br> Bradberry <br> Brad</h1>
+			</div>
+			<div class="template10-head_photo template-photo">
+				<img src="img/photo1.jpg" alt="Luciana Katler">
+			</div>
+		</div>
+		<div class="template10-main">
+			<div class="template10-block template10-profile">
+				<div class="template10-title">Profile</div>
+				<div class="template10-info">
+					<p>Certified medical professional with 8+ years of experience in providing excellent administrative and clinical support in various healthcare environments. Seeking to provide expert-level care and assistance to patients.</p>
+					<p>Certified medical professional with 8+ years of experience in providing excellent administrative and clinical support in various healthcare environments. Seeking to provide expert-level care and assistance to patients.</p>
+				</div>
+			</div>
+			<div class="template10-block template10-profile">
+				<div class="template10-title">Profile</div>
+				<div class="template10-block_inner">
+						<div class="template10-item">
+							<p>
+								Email
+							</p>
+							<a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
+						</div>
+						<div class="template10-item">
+							<p>
+								Skype
+							</p>
+							<a href="tel:+000 178 456 789">+000 178 456 789</a>
+						</div>
+						<div class="template10-item">
+							<p>
+								Phone
+							</p>
+							<a href="tel:+000 178 456 789">+000 178 456 789</a>
+						</div>
+						<div class="template10-item">
+							<p>
+								Telegram
+							</p>
+							<a href="tel:+000 178 456 789">+000 178 456 789</a>
+						</div>
+						<div class="template10-item">
+							<p>
+								Address
+							</p>
+							<p>your Country/City/Town</p>
+						</div>
+						<div class="template10-item">
+							<p>
+								LinkedIn
+							</p>
+							<a href="yourname.linkedin.com">yourname.linkedin.com</a>
+						</div>
+						<div class="template10-item">
+							<p>
+								Portfolio
+							</p>
+							<a href="portfolio.com">portfolio.com</a>
+						</div>
+						<div class="template10-item">
+							<p>
+								GitHub
+							</p>
+							<a href="yourname.github.com">yourname.github.com</a>
+						</div>
+					</div>
+			</div>
+			<div class="template10-block template10-profile">
+				<div class="template10-title">Lorem Ipsum</div>
+				<div class="template10-block_inner">
+					<div class="template10-item">
+						<p>
+							Your page
+						</p>
+						<a href="#">link to your page.com</a>
+					</div>
+					<div class="template10-item">
+						<p>
+							Your page
+						</p>
+						<a href="#">link to your page.com</a>
+					</div>
+					<div class="template10-item">
+						<p>
+							Your page
+						</p>
+						<a href="#">link to your page.com</a>
+					</div>
+					<div class="template10-item">
+						<p>
+							Your page
+						</p>
+						<a href="#">link to your page.com</a>
+					</div>
+					<div class="template10-item">
+						<p>
+							Your page
+						</p>
+						<a href="#">link to your page.com</a>
+					</div>
+					<div class="template10-item">
+						<p>
+							Your page
+						</p>
+						<a href="#">link to your page.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="template10-block template10-work">
+				<div class="template10-title">Work Experience</div>
+				<div class="template10-block_inner">
+					<div class="template10-item">
+						<div class="template10-item_time">
+							<p>Month/ 2020 - Present</p>
+							<p>Company name</p>
+						</div>
+						<div class="template10-item_info">
+							<p class="template10-item_info-heading">
+								Senior UX Designer
+							</p>
+							<p class="template10-item_info-description template10-small-text">
+								Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.
+							</p>
+						</div>
+					</div>
+					<div class="template10-item">
+						<div class="template10-item_time">
+							<p>Month/ 2020 - Present</p>
+							<p>Company name</p>
+						</div>
+						<div class="template10-item_info">
+							<p class="template10-item_info-heading">
+								Senior UX Designer
+							</p>
+							<p class="template10-item_info-description template10-small-text">
+								Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.
+							</p>
+						</div>
+					</div>
+					<div class="template10-item">
+						<div class="template10-item_time">
+							<p>Month/ 2020 - Present</p>
+							<p>Company name</p>
+						</div>
+						<div class="template10-item_info">
+							<p class="template10-item_info-heading">
+								Senior UX Designer
+							</p>
+							<p class="template10-item_info-description template10-small-text">
+								Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="template10-block template10-education">
+				<div class="template10-title">Education</div>
+				<div class="template10-block_inner">
+					<div class="template10-item">
+						<div class="template10-item_time">
+							<p>Month/ 2014 - Month / 2018</p>
+							<p>Degree Name - Master of Fine Arts (M.F.A.)
+								Field of study- Graphic design
+								University name here</p>
+						</div>
+						<div class="template10-item_info">
+							<p class="template10-item_info-description template10-small-text">
+								Lorem Ipsum issyf simply dummy text offted the
+								printing and typesetting industry. Lorem Ipsum
+								issyf simply dummy text offted the printing and
+								typesetting industry.
+							</p>
+						</div>
+					</div>
+					<div class="template10-item">
+						<div class="template10-item_time">
+							<p>Month/ 2014 - Month / 2018</p>
+							<p>Degree Name - Master of Fine Arts (M.F.A.)
+								Field of study- Graphic design
+								University name here</p>
+						</div>
+						<div class="template10-item_info">
+							<p class="template10-item_info-description template10-small-text">
+								Lorem Ipsum issyf simply dummy text offted the
+								printing and typesetting industry. Lorem Ipsum
+								issyf simply dummy text offted the printing and
+								typesetting industry.
+							</p>
+						</div>
+					</div>
+					<div class="template10-item">
+						<div class="template10-item_time">
+							<p>Month/ 2014 - Month / 2018</p>
+							<p>Degree Name - Master of Fine Arts (M.F.A.)
+								Field of study- Graphic design
+								University name here</p>
+						</div>
+						<div class="template10-item_info">
+							<p class="template10-item_info-description template10-small-text">
+								Lorem Ipsum issyf simply dummy text offted the
+								printing and typesetting industry. Lorem Ipsum
+								issyf simply dummy text offted the printing and
+								typesetting industry.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="template10-block template10-skills">
+				<div class="template10-title">Pro skill</div>
+				<div class="template10-block_inner">
+					<div class="template10-skills_item">
+						<span class="template10-skills_name">Skil 1</span>
+						<div class="template10-skills_progress">
+							<div class="template10-skills_progress-bar" style="width: 75%"></div>
+						<span class="template10-skills_date template10-small-text">2 Years</span>
+						</div>
+					</div>
+					<div class="template10-skills_item">
+						<span class="template10-skills_name">Skil 2</span>
+						<div class="template10-skills_progress">
+							<div class="template10-skills_progress-bar" style="width: 60%"></div>
+						<span class="template10-skills_date template10-small-text">10 Years</span>
+						</div>
+					</div>
+					<div class="template10-skills_item">
+						<span class="template10-skills_name">Skil 10</span>
+						<div class="template10-skills_progress">
+							<div class="template10-skills_progress-bar" style="width: 70%"></div>
+						<span class="template10-skills_date template10-small-text">1 Years</span>
+						</div>
+					</div>
+					<div class="template10-skills_item">
+						<span class="template10-skills_name">Skil 4</span>
+						<div class="template10-skills_progress">
+							<div class="template10-skills_progress-bar" style="width: 60%"></div>
+						<span class="template10-skills_date template10-small-text">1 Years</span>
+						</div>
+					</div>
+					<div class="template10-skills_item">
+						<span class="template10-skills_name">Skil 5</span>
+						<div class="template10-skills_progress">
+							<div class="template10-skills_progress-bar" style="width: 25%"></div>
+						<span class="template10-skills_date template10-small-text">3 Years</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="template10-block template10-language">
+				<div class="template10-title">Language</div>
+				<div class="template10-info">
+					<ul>
+						<li>English - <span>Native</span></li>
+						<li>Spanish - <span>Professional</span></li>
+						<li>Spanish - <span>Professional</span></li>
+						<li>Mandarin - <span>Basic</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="template10-block template10-profile">
+				<div class="template10-title">Lorem ipsum</div>
+				<div class="template10-info">
+					<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply
+						dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the
+						printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting
+						industryLorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf
+						simply dummy text offted the printing and typesetting industry</p>
+				</div>
+			</div>
+			<div class="template10-block template10-profile">
+				<div class="template10-title">Lorem ipsum</div>
+				<div class="template10-info">
+					<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply
+						dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the
+						printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting
+						industryLorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf
+						simply dummy text offted the printing and typesetting industry</p>				</div>
+			</div>
+			<div class="template10-block template10-profile">
+				<div class="template10-title">Lorem ipsum</div>
+				<div class="template10-info">
+					<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply
+						dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the
+						printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting
+						industryLorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf
+						simply dummy text offted the printing and typesetting industry</p>				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

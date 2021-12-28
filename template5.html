@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Резюме 5</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://artandrey.github.io/jobitt-demo/page/favicon.ico">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			width: 21cm;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		p {
+			line-height: 16px;
+		}
+		.template-wrapper {
+			position: relative;
+			background: white;
+		    max-width: 1000px;
+		    width: 100%;
+		    margin: auto; 
+		}
+		.template-photo {
+			overflow: hidden;
+		}
+		.template-photo img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.template5 {
+			background: #717493;
+			color: #555;
+			font: 10px 'Poppins', sans-serif;
+			padding-bottom: 2.5em;
+		}
+		.template5 a {
+			color: #555;
+			text-decoration: none;
+		}
+		.template5-head {
+			position: relative;
+		}
+		.template5-head_photo-wr {
+		    position: absolute;
+		    bottom: -9.2em;
+		    right: 7em;
+			width: 17em;
+		    height: 23em;
+		}
+		.template5-head_photo-wr:before {
+		    left: -1em;
+			border: 1em solid white;
+		    width: 100%;
+		    height: 100%;
+		}
+		.template5-head_photo-wr:after {
+		    left: -2em;
+		    border: 1em solid #717493;
+		    width: calc(100% + 2em);
+		    height: calc(100% + 1em);
+		}
+		.template5-head_photo-wr:before, .template5-head_photo-wr:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			border-top: 0;
+		}
+		.template5-head_photo-border {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.template5-head_photo-border:before {
+			left: -1em;
+			border: 1em solid #717493;
+			width: 100%;
+		}
+		.template5-head_photo-border:after {
+			left: -2em;
+			border: 1em solid white;
+			width: calc(100% + 2em);
+			z-index: 1;
+		}
+		.template5-head_photo-border:before, .template5-head_photo-border:after {
+			content: '';
+		    position: absolute;
+		    top: 0;
+			border-top: 0;
+			border-bottom: 0;
+		    height: 59.5%;
+		}
+		.template5-head_photo {
+			width: 100%;
+			height: 100%;
+		}
+		.template5-head_title {
+		    overflow: hidden;
+		    width: 69%;
+		    padding: 5em 0 3em 5em;
+		}
+		.template5-head_title h1 {
+		    color: white;
+		    font: 600 6em/.8em 'Work Sans', sans-serif;
+		    padding-bottom: .4em;
+		}
+		.template5-head_title h1 span {
+			font-weight: 300;
+		}
+		.template5-head_sub-title {
+		    position: relative;
+		    color: #717493;
+		    font: 500 2.3em/1.6em 'Montserrat', sans-serif;
+		    white-space: nowrap;
+		    letter-spacing: .06em;
+		}
+		.template5-head_sub-title:after {
+		    content: '';
+		    position: absolute;
+		    top: 0;
+		    left: -3em;
+		    background: #D7BEC3;
+		    transform: skew(35deg);
+		    width: calc(100% + 2.4em);
+		    height: 100%;
+		}
+		.template5-head_sub-title span {
+			position: relative;
+			z-index: 1;
+		}
+		.template5-main {
+		    display: flex;
+		    flex-wrap: wrap;
+		    background: white;
+		}
+		.template5-col1 {
+			border-right: .1em solid #717493;
+		    width: 30%;
+		    padding: 5em;
+		}
+		.template5-col2 {
+			position: relative;
+			width: 70%;
+			padding: 16em 4.5em 0;
+		}
+		.template5-block:last-child {
+			margin-bottom: 0;
+		}
+		.template5-block {
+			margin-bottom: 3em;
+		}
+		.template5-title {
+			border-bottom: .05em solid #717493;
+		    color: #717493;
+		    font: 2.2em/1em 'Work Sans', sans-serif;
+		    letter-spacing: .2em;
+		    text-align: center;
+		    text-transform: uppercase;
+		    padding-bottom: .3em;
+		    margin-bottom: 1em;
+		}
+		.template5-block .template5-info ul li:last-child {
+			margin-bottom: 0;
+		}
+		.template5-contact .template5-block {
+			margin-bottom: 7em;
+		}
+		.template5-contact_title {
+			display: block;
+			font-size: 1.6em;
+			width: 100%;
+		}
+		.template5-contact .template5-info ul li {
+			padding-bottom: 1.2em;
+		}
+		.template5-contact_icon {
+			position: relative;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+			width: 2.2em;
+			height: 2.2em;
+			margin: 0 .5em;
+		}
+		.template5-contact_icon svg {
+			fill:#e5f1ff;
+		}
+		.template5-contact_text {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			padding-left: 1em;
+		}
+		.template5-education .template5-info ul li {
+			padding-bottom: 2.5em;
+		}
+		.template5-education .template5-info ul li span {
+			display: block;
+			font-size: 1.2em;
+		}
+		.template5-languagea .template5-info ul li {
+			margin-bottom: 2em;
+		}
+		.template5-languagea_name {
+			color: #2C2C2C;
+		    font-size: 1.8em;
+		}
+		.template5-languagea_level {
+			color: #575756;
+		}
+		.template5-languagea_level:before {
+			content: '-';
+			margin-right: .4em;
+		}
+		.template5-profile {
+			margin-bottom: 4em;
+		}
+		.template5-work {
+			margin-bottom: 2em;
+		}
+		.template5-work_row:last-child {
+			padding-bottom: 0;
+		}
+		.template5-work_row {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-bottom: 2em;
+		}
+		.template5-work_col1 {
+			width: 22%;
+		}
+		.template5-work_col2 {
+			width: 78%;
+		}
+		.template5-work_date, .template5-work_name {
+			font-size: 1.1em;
+		}
+		.template5-work_date {
+			padding-bottom: .5em;
+		}
+		.template5-work_post {
+		    font-weight: 500;
+		    padding-bottom: .5em;
+		}
+		.template5-work_desc p {
+			font-weight: 300;
+		}
+		.template5-skills .template5-info {
+			display: flex;
+		    flex-wrap: wrap;
+		}
+		.template5-skills_item {
+		    width: calc(50% - 8em);
+		    margin-right: 8em;
+		    margin-bottom: 2em;
+		}
+		.template5-skills_head {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    padding-bottom: .4em;
+		}
+		.template5-skills_name {
+			font-weight: 500;
+		}
+		.template5-skills_progress {
+			background: #717493;
+			border-radius: .3em;
+		    height: .8em;
+		}
+	</style>
+</head>
+<body>
+	<div class="template5 template-wrapper">
+		<div class="template5-head">
+			<div class="template5-head_title">
+				<h1>SARA <span>WALTON</span></h1>
+				<div class="template5-head_sub-title">
+					<span>UI & UX DESIGNER</span>
+				</div>
+			</div>
+			<div class="template5-head_photo-wr">
+				<div class="template5-head_photo template-photo">
+					<img src="img/photo2.jpg" alt="Photo">
+				</div>
+				<div class="template5-head_photo-border"></div>
+			</div>
+		</div>
+		<div class="template5-main">
+			<div class="template5-col1">
+				<div class="template5-block template5-contact">
+					<div class="template5-title">Contact</div>
+					<div class="template5-info">
+						<ul>
+							<li>
+								<span class="template5-contact_title">Phone</span>
+								<a href="tel:+000123456789">+000 123 456 789</a>
+							</li>
+							<li>
+								<span class="template5-contact_title">Email</span>
+								<a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
+							</li>
+							<li>
+								<span class="template5-contact_title">Address</span>
+								<span>Your Street Address</span>
+								<p>Town/City, zip code</p>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="template5-block template5-education">
+					<div class="template5-title">Education</div>
+					<div class="template5-info">
+						<ul>
+							<li>
+								<span class="template5-education_date">2014 - 2018</span>
+								<span class="template5-education_name1">Degree Name</span>
+								<span class="template5-education_name2">University name here</span>
+							</li>
+							<li>
+								<span class="template5-education_date">2012 - 2014</span>
+								<span class="template5-education_name1">Degree Name</span>
+								<span class="template5-education_name2">University name here</span>
+							</li>
+							<li>
+								<span class="template5-education_date">2012 - 2014</span>
+								<span class="template5-education_name1">Degree Name</span>
+								<span class="template5-education_name2">University name here</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="template5-block template5-languagea">
+					<div class="template5-title">Languagea</div>
+					<div class="template5-info">
+						<ul>
+							<li>
+								<span class="template5-languagea_name">English</span>
+								<span class="template5-languagea_level">Native</span>
+							</li>
+							<li>
+								<span class="template5-languagea_name">Italian</span>
+								<span class="template5-languagea_level">Basic</span>
+							</li>
+							<li>
+								<span class="template5-languagea_name">Spanish</span>
+								<span class="template5-languagea_level">Professional</span>
+							</li>
+							<li>
+								<span class="template5-languagea_name">Mandarin</span>
+								<span class="template5-languagea_level">Basic</span>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="template5-col2">
+				<div class="template5-block template5-profile">
+					<div class="template5-title">Profile</div>
+					<div class="template5-info">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</div>
+				</div>
+				<div class="template5-block template5-work">
+					<div class="template5-title">Work Experience</div>
+					<div class="template5-info">
+						<div class="template5-work_row">
+							<div class="template5-work_col1">
+								<div class="template5-work_date">2020 - Present</div>
+								<div class="template5-work_name">Company Name</div>
+							</div>
+							<div class="template5-work_col2">
+								<div class="template5-work_post">Senior UX Designer</div>
+								<div class="template5-work_desc">
+									<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template5-work_row">
+							<div class="template5-work_col1">
+								<div class="template5-work_date">2019 - 2020</div>
+								<div class="template5-work_name">Company Name</div>
+							</div>
+							<div class="template5-work_col2">
+								<div class="template5-work_post">Junior UX Designer</div>
+								<div class="template5-work_desc">
+									<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.</p>
+								</div>
+							</div>
+						</div>
+						<div class="template5-work_row">
+							<div class="template5-work_col1">
+								<div class="template5-work_date">2018 - 2019</div>
+								<div class="template5-work_name">Company Name</div>
+							</div>
+							<div class="template5-work_col2">
+								<div class="template5-work_post">UX Designer</div>
+								<div class="template5-work_desc">
+									<p>Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry. Lorem Ipsum issyf simply dummy text offted the printing and typesetting industry.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template5-block template5-skills">
+					<div class="template5-title">Skills</div>
+					<div class="template5-info">
+						<div class="template5-skills_item">
+							<div class="template5-skills_head">
+								<div class="template5-skills_name">Photoshop</div>
+								<div class="template5-skills_date">2 Years</div>
+							</div>
+							<div class="template5-skills_progress"></div>
+						</div>
+						<div class="template5-skills_item">
+							<div class="template5-skills_head">
+								<div class="template5-skills_name">Blender</div>
+								<div class="template5-skills_date">2 Years</div>
+							</div>
+							<div class="template5-skills_progress"></div>
+						</div>
+						<div class="template5-skills_item">
+							<div class="template5-skills_head">
+								<div class="template5-skills_name">Blender</div>
+								<div class="template5-skills_date">2 Years</div>
+							</div>
+							<div class="template5-skills_progress"></div>
+						</div>
+						<div class="template5-skills_item">
+							<div class="template5-skills_head">
+								<div class="template5-skills_name">Blender</div>
+								<div class="template5-skills_date">2 Years</div>
+							</div>
+							<div class="template5-skills_progress"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
